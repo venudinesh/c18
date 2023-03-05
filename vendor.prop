@@ -276,3 +276,6 @@ persist.log.tag.PowerHalMgrServiceImpl=S
 persist.log.tag.PowerHalWifiMonitor=S
 persist.log.tag.RILMUXD=S
 persist.log.tag.UxUtility=S
+
+# IncrementalFS
+ro.incremental.enable=yes
