@@ -477,6 +477,10 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
 
+# Chipinfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Camera
 odm/lib/libmpbase.so
 odm/lib/liboplus_platform_hwi.so
@@ -1012,7 +1016,6 @@ vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
 vendor/lib64/libdip_postproc.so
 vendor/lib64/libdre.so
-vendor/lib64/libdynamiclog.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libfeature.face.so
 vendor/lib64/libfeature.stereo.provider.so
@@ -1984,8 +1987,10 @@ vendor/bin/fuelgauged_nvram
 vendor/bin/nvram_daemon
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/nvram_daemon.rc
+vendor/etc/init/init.connfem.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib/libconnfem.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libfile_op.so
 vendor/lib/libnvram.so
@@ -1993,6 +1998,7 @@ vendor/lib/libnvram_sec.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib64/libconnfem.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libnvram.so
@@ -2005,6 +2011,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 odm/etc/powerhal/power_app_cfg.xml
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/init.fpsgo.rc
+vendor/etc/init/bootperf.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
@@ -2171,6 +2178,9 @@ vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
+# Reserve
+odm/etc/init/init.oplus.reserve.rc
+
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
@@ -2227,21 +2237,6 @@ vendor/lib/hw/thermal_hal.so
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
-
-# Misc
-odm/etc/init/init.oplus.reserve.rc
-odm/init.oplus.seccommon.rc
-vendor/bin/chipinfo
-vendor/bin/dconfig
-vendor/bin/dexecutor
-vendor/bin/doeapp-memtester
-vendor/etc/init/bootperf.rc
-vendor/etc/init/chipinfo_init.rc
-vendor/etc/init/init.connfem.rc
-vendor/lib/libconnfem.so
-vendor/lib/libdynamiclog.so
-vendor/lib64/libconnfem.so
-vendor/lib64/libforkexecwrap.so
 
 # ORMS
 odm/lib/libormshalclient.so
@@ -2349,3 +2344,4 @@ vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libforkexecwrap.so
