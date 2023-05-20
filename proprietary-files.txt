@@ -1986,8 +1986,8 @@ vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/fuelgauged_nvram
 vendor/bin/nvram_daemon
 vendor/etc/init/fuelgauged_nvram_init.rc
-vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/init.connfem.rc
+vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/libconnfem.so
@@ -2010,8 +2010,8 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 # Power
 odm/etc/powerhal/power_app_cfg.xml
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/bootperf.rc
+vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
@@ -2340,8 +2340,8 @@ vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/libapmonitor_vendor.so
+vendor/lib64/libforkexecwrap.so
 vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
-vendor/lib64/libforkexecwrap.so
