@@ -51,9 +51,6 @@ done
 
 function blob_fixup {
     case "$1" in
-        vendor/lib64/libwifi-hal-mtk.so)
-            "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
-            ;;
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
