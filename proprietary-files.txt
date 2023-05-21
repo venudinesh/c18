@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX3085-user 12 SP1A.210812.016 R.GDPR.c3619e_1 release-keys
+# Unpinned blobs from RMX3085-user 12 SP1A.210812.016 R.GDPR.fa308f-7e6a release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -1129,8 +1129,8 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 
-# Camera Feature Policy - from RMX3085EEA_11_C.11
-vendor/lib64/libmtkcam_featurepolicy.so|c539aa55b40a60ac82a9f5791b0e82cc331ec2fa|54a902eb3c3ef3518b806fc0732f0af49f537500
+# Camera Feature Policy
+vendor/lib64/libmtkcam_featurepolicy.so|a30b8eb9ec899ce90629898b4893d906fa11552b|8c53ab87c7b3d71127bbfe5abfda3183b989f0eb
 
 # Camera configs
 odm/etc/camera/tonemap/tonemap/curve_lut_0
