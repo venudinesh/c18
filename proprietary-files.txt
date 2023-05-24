@@ -1189,16 +1189,6 @@ odm/etc/camera/fwk_config.json
 # CDSP
 odm/lib64/libcdsprpc.so
 
-# Dirac
-odm/etc/dirac/Dirac_Support_Apps.xml
-odm/etc/dirac/diracmobile.config
-odm/etc/dirac/diracvdd.bin
-odm/lib/soundfx/libdirac.so
-odm/lib/soundfx/libdiraceffect.so
-odm/lib/libDiracAPI_SHARED.so
-odm/lib/libdiracapwrapper.so
-odm/lib/libdiracgefwrapper.so
-
 # Display
 odm/lib/libdpservice.so
 odm/lib64/libdpservice.so
