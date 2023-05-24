@@ -16,9 +16,6 @@ vendor/lib/libladder.so
 vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 
-# ADSP
-odm/lib64/libadsprpc.so
-
 # APU
 vendor/lib/libapu_mdw.so
 vendor/lib/libapusys.so
@@ -1185,9 +1182,6 @@ odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/anc_cl_kernel.cache
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
-
-# CDSP
-odm/lib64/libcdsprpc.so
 
 # Display
 odm/lib/libdpservice.so
