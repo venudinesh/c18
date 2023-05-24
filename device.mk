@@ -344,9 +344,7 @@ PRODUCT_PACKAGES += \
     fstab.mt6785_ramdisk \
     init.ago.rc \
     init.cgroup.rc \
-    init.connectivity.common.rc \
     init.connectivity.rc \
-    init_connectivity.rc \
     init.modem.rc \
     init.mt6785.rc \
     init.mt6785.usb.rc \
