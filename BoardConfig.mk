@@ -151,7 +151,7 @@ SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := $(DEVICE_PATH)/touch/include
 
 # FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/oplus:libudfps_extension.oplus
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
