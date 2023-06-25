@@ -388,7 +388,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
-    hardware/oplus
+    vendor/hardware/oplus
 
 # Thermal
 PRODUCT_PACKAGES += \
