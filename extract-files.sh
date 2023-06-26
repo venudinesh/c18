@@ -65,6 +65,9 @@ function blob_fixup {
             xxd -p "${2}" | sed "s/90b0034e88740b9/90b003428028052/g" | xxd -r -p > "${2}".patched
             mv "${2}".patched "${2}"
             ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            "$PATCHELF" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
+            ;;
     esac
 }
 
