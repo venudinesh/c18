@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX3085-user 12 SP1A.210812.016 R.GDPR.fa308f-7e6a release-keys
+# Unpinned blobs from RMX3085-user 12 SP1A.210812.016 R.GDPR.11887c9-1 release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -1750,7 +1750,7 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # ImsService
--priv-app/ImsService/ImsService.apk|1ea6551463d44b6a5af380b8e1c8f8cb420a0b05
+-priv-app/ImsService/ImsService.apk|45f38c52295aaf3cb8a0290669582c7d7431eee0
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.trustonic
