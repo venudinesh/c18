@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata_shim
+    libcamera_metadata_shim_nashc
 
 # Doze
 PRODUCT_PACKAGES += \
