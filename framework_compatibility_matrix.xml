@@ -371,30 +371,23 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.lineage.health</name>
+	 <hal format="hidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <version>2.1</version>
         <interface>
-            <name>IChargingControl</name>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
-        <version>1.0</version>
+	<hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
         <interface>
-            <name>ITouchscreenGesture</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
-        <version>1.0</version>
-        <interface>
-            <name>IHighTouchPollingRate</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ITouchscreenGesture</name>
+            <name>IPower</name>
             <instance>default</instance>
         </interface>
     </hal>
