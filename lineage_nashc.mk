@@ -18,7 +18,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device config
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := false
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
