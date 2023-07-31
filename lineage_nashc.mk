@@ -15,36 +15,52 @@ $(call inherit-product, device/realme/nashc/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device config
-TARGET_HAS_UDFPS := true
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rising.chipset", "Snapdragon 870 5G");
+RISING_CHIPSET := "MEDIATEK G95"
+
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rising.maintainer", "maintainer");
+RISING_MAINTAINER := "Eren"
+
+# chipset flag enclose var with "" if more than one
+# this will reflect on build/display version, a firmware package/zip name 
+# e.g. risingDroid-7.0-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
+RISING_PACKAGE_TYPE := "Vanilla"
+
+# Aperture Camera (default: not defined - skipped by the compiler)
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
 
-# GAPPS config
-# 0 - NO GAPPS (default)
-# 1 - CORE GAPPS
-# 2 - FULL GAPPS
-WITH_GAPPS := 0
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
 
-# Use Google Telephony pack (Dialer, Contacts, Messaging) on GAPPS builds
-# Default = true
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := false
+
+# GMS build flags
+WITH_GMS := false
+
+# Customized GMS Flags 
+# WITH_GMS flag is required
+
+# Default GMS flags sets (Override the values on lineage_xxx.mk)
+WITH_GMS := false
+TARGET_CORE_GMS := false
+
+# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
 TARGET_USE_GOOGLE_TELEPHONY := false
 
-# Include Pixel Framework on FULL GAPPS builds
-# Default = true
-TARGET_USE_PIXEL_FRAMEWORK := true
+# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
+# package type will change from PIXEL/GMS -> CORE
+TARGET_CORE_GMS := false
 
-# Debugging
-TARGET_INCLUDE_MATLOG := true
-TARGET_DEFAULT_ADB_ENABLED := true
-
-# Maintainer
-ALPHA_BUILD_TYPE := Unofficial
-ALPHA_MAINTAINER := Eren_Yeager
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := false
 
 PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
