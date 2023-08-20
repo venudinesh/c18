@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata_shim
+    libcamera_metadata_shim_nashc
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -185,10 +185,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.nashc
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service-nashc
@@ -197,7 +193,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
-    libavservices_minijail_vendor \
+    libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor
@@ -249,10 +245,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-colt
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-colt
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
@@ -302,7 +298,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-    android.hardware.power-V2-ndk_platform.vendor \
+    android.hardware.power-V2-ndk.vendor \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
