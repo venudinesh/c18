@@ -378,11 +378,15 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
-        <version>1.0</version>
+	<hal format="hidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <version>2.1</version>
         <interface>
-            <name>ITouchscreenGesture</name>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
     </hal>
