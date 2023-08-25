@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common.mk)
 
-PRODUCT_NAME := lineage_nashc
+PRODUCT_NAME := cherish_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
@@ -29,3 +29,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="RMX3085-user 12 SP1A.210812.016 R.GDPR.fa308f-7e6a release-keys"
 
 BUILD_FINGERPRINT := realme/RMX3085/RMX3085L1:12/SP1A.210812.016/R.GDPR.fa308f-7e6a:user/release-keys
+
+# Cherish Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Eren_Yeager
+CHERISH_BUILD_TYPE := OFFICIAL
