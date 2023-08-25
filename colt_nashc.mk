@@ -17,7 +17,7 @@ $(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 # Inherit some common ColtOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-COLT_BUILD_TYPE := OFFICIAL
+COLT_BUILD_TYPE := UNOFFICIAL
 COLT_BUILD_MAINTAINER := "Eren Yeager"
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_HAS_UDFPS := true
