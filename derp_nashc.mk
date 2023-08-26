@@ -12,15 +12,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common Derpfest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Inherit some common ColtOS stuff.
+# Setup Derp options
 TARGET_BOOT_ANIMATION_RES := 1080
-COLT_BUILD_TYPE := UNOFFICIAL
-COLT_BUILD_MAINTAINER := "Eren Yeager"
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_HAS_UDFPS := true
+TARGET_GAPPS_ARCH := arm64
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# FOD Animations
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Official-ify
+DERP_BUILDTYPE := UnOfficial
+
+# Boot animation
+scr_resolution := 1080
+TARGET_SCREEN_HEIGHT := 2240
+TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_NAME := colt_nashc
 PRODUCT_DEVICE := nashc
