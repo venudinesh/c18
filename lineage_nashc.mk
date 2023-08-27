@@ -12,8 +12,35 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common AlphadroidOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS
+WITH_GAPPS := true
+TARGET_INCLUDE_GOOGLE_APP := true
+TARGET_INCLUDE_GOOGLE_CALCULATOR := true
+TARGET_INCLUDE_GOOGLE_CALENDAR := false
+TARGET_INCLUDE_GOOGLE_CHROME := true
+TARGET_INCLUDE_GOOGLE_DESKCLOCK := false
+TARGET_INCLUDE_GOOGLE_DRIVE := false
+TARGET_INCLUDE_GMAIL := true
+TARGET_INCLUDE_GOOGLE_MAPS := true
+TARGET_INCLUDE_GOOGLE_PHOTOS := true
+TARGET_INCLUDE_GOOGLE_SETUP := true
+
+# Debugging
+TARGET_INCLUDE_MATLOG := true
+TARGET_DEFAULT_ADB_ENABLED := true
+
+# Maintainer
+ALPHA_BUILD_TYPE := UnOfficial
+ALPHA_MAINTAINER := Ereh
 
 PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
