@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# ART
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
