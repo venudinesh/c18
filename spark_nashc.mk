@@ -12,8 +12,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common SparkOS stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Spark specific flags
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_PIXEL_CHARGER := false
+TARGET_USES_BLUR := true
+WITH_GAPPS=true
+SPARK_BUILD_TYPE := UNofficial
+
 
 PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
