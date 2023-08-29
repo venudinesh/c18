@@ -15,6 +15,23 @@ $(call inherit-product, device/realme/nashc/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit some RisingOSS stuff.
+RISING_CHIPSET := G95
+RISING_MAINTAINER := Ereh
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RISING_PACKAGE_TYPE := "Full-GAPPS"
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+SUSHI_BOOTANIMATION := 1080
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BUILD_APERTURE_CAMERA := true
+
 PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
