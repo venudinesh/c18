@@ -31,7 +31,7 @@ WITH_GAPPS=true
 SPARK_BUILD_TYPE := UNofficial
 
 
-PRODUCT_NAME := lineage_nashc
+PRODUCT_NAME := spark_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
