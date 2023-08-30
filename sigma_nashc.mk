@@ -12,10 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common SigmadroidOS stuff.
+$(call inherit-product, vendor/sigma/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_nashc
+#sigma
+TARGET_BOOT_ANIMATION_RES:= 1080
+TARGET_USES_MINI_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+EXTRA_UDFPS_ANIMATIONS:= true
+
+PRODUCT_NAME := sigma_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
