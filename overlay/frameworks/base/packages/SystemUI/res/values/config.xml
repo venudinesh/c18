@@ -52,6 +52,10 @@
 
     <!-- Array of brightness-alpha lut for framework dimming -->
     <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
+<<<<<<< HEAD
+=======
+        <item>0,255</item>
+>>>>>>> 6c0d54b... Change fingerprint animation size and HBM delay
         <item>1,235</item>
         <item>16,230</item>
         <item>24,228</item>
