@@ -12,10 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ColtOS stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_nashc
+# Inherit some common ColtOS stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+COLT_BUILD_TYPE := UNOFFICIAL
+COLT_BUILD_MAINTAINER := "Eren Yeager"
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_HAS_UDFPS := true
+
+PRODUCT_NAME := colt_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
