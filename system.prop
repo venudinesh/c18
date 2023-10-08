@@ -87,3 +87,6 @@ zygote.critical_window.minute=10
 
 # Logcat
 persist.log.tag.gralloc4=S
+
+#DroidxUI maintainer
+ro.droidx.maintainer=Dimitry
