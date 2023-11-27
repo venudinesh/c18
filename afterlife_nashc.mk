@@ -12,8 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Afertlife stuff.
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# AfterLify
+AFTERLIFE_BUILD_TYPE := UNOFFICIAL
+AFTERLIFE_GAPPS := true
 
 PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
